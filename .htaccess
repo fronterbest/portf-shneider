@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule ^(.*)$ public/$1 [L]
+
+AuthType Basic
+AuthName "LOG IN"
+AuthUserFile /home/yqlsxqcy/public_html/.htpasswd
+Require valid-user

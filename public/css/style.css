@@ -1,0 +1,991 @@
+@charset "utf-8";
+body{
+	color: #343434;
+}
+
+a{
+	color: #343434;
+}
+
+div p{
+	color: #000;
+	margin-bottom: 14px;
+	font: 20px/24px "raleway_regular";	
+}
+
+.layoutB h1{
+	font: 28px/31px "raleway_medium";
+	margin-bottom: 20px;
+}
+
+.layoutB h2{
+	font: 18px/24px "raleway_medium";
+	margin-bottom: 12px;	
+}
+
+a:not(.logo):hover{
+	color: #04bc77;	
+}
+
+.wrapper:after,
+div.commentsBlock ul li:after,
+div.commentsBlock ul li ul li:after,
+.formComment .info:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.imageBlock{
+	margin-bottom: 15px;
+}
+
+div.imageBlock img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.switch ul li:before,
+.contentSwitch ul li:before{
+	content: "";
+}
+
+/***Шапка***/
+header{
+	padding: 2px 0 10px 0;
+	box-sizing: border-box;
+}
+
+header a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header ul{
+	list-style: none;
+}
+
+header .info{
+	float: left;
+}
+
+header .social{
+	float: right;
+}
+
+a.logo,
+header nav{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+a.logo{
+	font-size: 41px;
+    margin-right: 83px;
+	font-family: "bauhs93";
+}
+
+header nav ul.fullMenu > li,
+header .social ul > li{
+	display: inline-block;
+}
+
+header nav ul.fullMenu > li{
+	margin-left: 42px;
+}
+
+header nav ul.fullMenu > li:nth-of-type(1){
+	margin-left: 0px;
+}
+
+/*toggleButton start*/
+header nav ul.fullMenu > li.toggleButton{
+	box-sizing: border-box;
+    display: none;
+    cursor: pointer;
+    float: none;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+    top: -2px;
+    z-index: 5;
+    margin-left: 10px;
+}
+
+header nav ul.fullMenu > li.toggleButton svg{
+	width: 5px;
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: 0px;
+}
+
+header nav ul.fullMenu > li.toggleButton svg path{
+	fill: #fff;
+}
+
+header nav ul.fullMenu > li.toggleButton ul.menu{
+	float: right;
+    margin-right: 0;
+    padding: 0;
+    float: none;
+    position: absolute;
+    height: auto;
+    display: none;
+    top: 28px;
+    right: 27px;
+    text-align: left;
+}
+
+header nav ul.fullMenu > li.toggleButton.active ul.menu{
+	display: block;
+}
+
+header nav ul.fullMenu > li.toggleButton ul.menu li{
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+}
+
+header nav ul.fullMenu > li.toggleButton ul.menu.active{
+	display: block;
+}
+
+header nav ul.fullMenu > li.toggleButton ul.menu li > a{
+	padding: 11px 5px 10px 13px;
+    margin: 0;
+    display: block;
+    background: #25aae1;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+header nav ul.fullMenu > li.toggleButton ul.menu li > a:hover{
+    background: #21d368;	
+}
+
+header nav ul.fullMenu > li.toggleButton:hover svg path{
+	fill: #04bc77;
+}
+
+header nav ul.fullMenu > li.toggleButton.show{
+	display: inline-block;
+}
+
+.hide,
+header nav ul.fullMenu > li.hide{
+	display: none;
+}
+/*toggleButton end*/
+
+/*fullMenu start*/
+div.fullMenu {
+
+}
+
+.fullMenu .fullMenuButton {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    display: none;
+    margin-top: 12px;
+}
+
+.fullMenu .fullMenuButton svg{
+    width: 40.82px;
+    height: 35px;
+    position: relative;
+    top: 0;
+}
+
+.fullMenu .fullMenuButton svg path{
+    fill: #fff;
+}
+
+.fullMenu .fullMenuButton:hover svg path{
+	fill: #21d368;
+}
+/*fullMenu end*/
+
+header nav a{
+	font: 18px/24px "raleway_semiBold";
+}
+
+header .social{
+	margin-top: 17px;
+	margin-left: 20px;
+}
+
+header .social a{
+	margin-right: 29px;
+}
+
+header .social ul > li.last a{
+	margin-right: 0px;
+}
+
+header .social a > i{
+	font-size: 22px;
+}
+
+/*Контент главная*/
+.switch ul li,
+.contentSwitch ul li{
+	list-style: none;
+}
+
+.switch{
+	text-align: center;
+	margin: 79px 0 46px 0; 
+}
+
+.switch ul li{
+	display: inline-block;
+	margin-right: 16px;
+	margin-bottom: 3px;
+	padding: 7px 20px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    box-sizing: border-box;
+    cursor: pointer;
+	font: 24px/24px "raleway_regular";
+}
+
+.switch ul li.current{
+	color: #fff;
+	cursor: default;
+    background-color: #21d368;
+}
+
+.switch ul li:not(.current):hover{
+	color: #04bc77;	
+}
+
+.contentSwitch{
+	margin-bottom: 20px;
+}
+
+.contentSwitch > div > ul{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-bottom: 8px;
+}
+
+.contentSwitch div[key] > ul > li{
+	width: 32.8%;
+    padding: 21px 20px 28px 20px;
+	box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	margin-right: 0.4%;
+	margin-bottom: 23px;
+	text-align: left;
+}
+
+.contentSwitch div[key] > ul > li:hover{
+	box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contentSwitch div[key] > ul > li:hover > a.head{
+	color: #04bc77;
+}
+
+.contentSwitch div[key] > ul li:hover > .text{
+	color: #111;
+}
+
+.contentSwitch div[key] > ul > li:nth-of-type(3n){
+	margin-right: 0px;
+}
+
+.contentSwitch div[key] > ul > li .image{
+	display: inline-block;
+	margin-bottom: 20px;	
+}
+
+.contentSwitch div[key] > ul > li img{
+	width: 100%;
+	max-width: 100%;
+}
+
+.contentSwitch div[key] > ul > li a.head{
+	color: #000;
+	display: inline-block;
+	margin-bottom: 15px;
+	font: 18px/24px "raleway_semiBold";
+}
+
+.contentSwitch div[key] > ul > li > .text{
+	display: inline-block;
+	width: 100%;
+	color: #9c9c9c;
+	font: 16px/24px "raleway_medium";
+}
+
+.ranges{
+
+	margin-bottom: 30px;
+}
+
+.ranges ul{
+	text-align: center;
+}
+
+.ranges ul li{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	padding: 4px 9px 2px 8px;
+    margin-right: 2px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.ranges ul li > span{
+    font: 16px/16px "gotham_pro";	
+    display: inline-block;
+}
+
+.ranges ul li:hover > span{
+	color: #04bc77;	 
+}
+
+.ranges ul li.current{
+	cursor: default;
+	background-color: #21d368;
+}
+
+.ranges ul li.current > span{
+	color: #fff;
+	font-weight: bold;
+}
+
+.copyright{
+	font: 16px/24xp "raleway_medium";
+}
+
+/*Блог*/
+ul.path > li,
+ul.news > li,
+ul.collapseMenu li{
+	list-style: none;
+}
+
+/*Путь*/
+ul.path{
+	margin-bottom: 5px;
+}
+
+ul.path > li{
+	display: inline-block;
+	position: relative;
+	padding-right: 15px;
+}
+
+ul.path > li > *{
+	color: #9c9c9c;
+	font: 16px/24px "raleway_medium";
+}
+
+ul.path > li > span{
+	color: #797474;
+}
+
+ul.path > li:after{
+	content: "";
+	position: absolute;
+	top: 7px;
+	right: 3px;
+	width: 6px;
+	height: 9px;
+	background: url("../images/arrowPath.png") 0 0 no-repeat;
+}
+
+ul.path > li:last-child:after{
+	background: none;
+}
+
+/*Новости*/
+ul.news > li{
+	margin-bottom: 47px;
+	box-sizing: border-box;
+	padding-bottom: 46px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+ul.news > li:last-child{
+	border: none;
+}
+
+ul.news > li > a.image{
+	display: inline-block;
+	margin-bottom: 26px;
+}
+
+ul.news > li img{
+	width: 100%;
+	max-width: 100%;
+	display: inline-block;
+}
+
+#container ul.news > li > h2 > a{
+	text-decoration: none;
+	color: #343434;
+}
+
+ul.news > li > div.date{
+	color: #7b7a7a;
+	font: 16px/24px "raleway_medium";
+	margin-bottom: 27px;
+}
+
+ul.news > li > div.date a{
+	color: #7b7a7a;	
+}
+
+ul.news > li > div.date a:hover,
+#container ul.news > li > h2 > a:hover{
+    color: #04bc77;	
+}
+
+ul.news > li > div.description{
+	margin-bottom: 39px;
+}
+
+ul.news > li > div.description,
+ul.news > li > div.description > p{
+	color: #9c9c9c;
+	font: 16px/24px "raleway_medium";
+}
+
+ul.news > li > a.more{
+	color: #fff;
+	display: inline-block;
+	padding: 6px 42px 7px;
+	-webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font: 18px/40px "raleway_semiBold";
+	background-color: #04bc77;
+}
+
+ul.news > li > a.more:hover{
+	background-color: #24e29b;
+}
+
+/*Блок слева*/
+.menuBlock{
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.menuBlock > span.head{
+	color: #343434;
+	display: inline-block;
+	margin-bottom: 35px;
+	font: 24px/24px "raleway_semiBold";
+}
+
+.collapseMenu{
+	margin-bottom: 107px;
+	position: relative;
+	padding-left: 28px;
+	box-sizing: border-box;	
+}
+
+.collapseMenu:after{
+	content: "";
+	bottom: -51px;
+	left: 0;
+	border: 1px solid #e1e1e1;
+	position: absolute;
+	width: 100%;
+}
+
+.collapseMenu > li a{
+	text-decoration: none;
+	position: relative;
+}
+
+.collapseMenu > li a:hover .fa{
+	color: #04bc77;
+}
+
+.collapseMenu li.selected{
+	font-weight: bold;
+}
+
+/*Стрелки*/
+.collapseMenu li{
+	display: inline-block;
+	width: 100%;
+}
+
+.collapseMenu .fa{
+	font-size: 18px;
+	color: #000;
+	width: 40px;
+	position: absolute;
+}
+
+.collapseMenu .fa-angle-right{
+	top: 50%;
+	margin-top: -9px;
+	left: -18px;
+}
+
+.collapseMenu .fa-angle-down{
+	top: 50%;
+	margin-top: -9px;
+	left: -24px;
+}
+
+.collapseMenu .fa.fa-angle-down{
+	display: none;
+}
+
+.collapseMenu li.active .fa-angle-right{
+	display: none;
+}
+
+.collapseMenu li.active .fa.fa-angle-down{
+	display: inline-block;
+}
+
+.collapseMenu li:not(.active) .fa-angle-down{
+	display: none;
+}
+
+/*Первый уровень*/
+.collapseMenu > li{
+	margin-bottom: 22px;
+	font: 18px/22px "raleway_semiBold";	
+} 
+
+.collapseMenu > li > a{
+	text-transform: uppercase;	
+}
+
+/*Второй уровень*/
+.collapseMenu > li > ul{
+    padding-left: 24px;
+    margin-top: 27px;
+	box-sizing: border-box;
+}
+
+.collapseMenu > li > ul > li{
+	font: 16px/28px "raleway_semiBold";	
+} 
+
+/*Третий уровень*/
+.collapseMenu > li > ul > li > ul{
+	padding-left: 24px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	box-sizing: border-box;
+}
+
+.collapseMenu > li > ul > li > ul > li{
+	font: 16px/26px "raleway_regular";	
+	margin-bottom: 10px;
+} 
+
+.collapseMenu > li > ul > li > ul > li:last-child{
+	margin-bottom: 0px;
+}
+
+/*Блок поиска*/
+.searchBlock > .head{
+	color: #343434;
+	display: inline-block;
+	margin-bottom: 30px;
+	font: 24px/24px "raleway_semiBold";
+}
+
+.searchBlock input.field{
+	padding: 15px 27px 12px 27px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+	border: 1px solid #ccc;
+	color: #7b7a7a;
+	width: 100%;
+	outline: none;
+	font: 16px/24px "raleway_medium";
+}
+
+.searchBlock form{
+	position: relative;
+	width: 82%;
+}
+
+.searchBlock .send{
+	background: rgba(0,0,0,0);
+	border: none;
+	width: 30px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 17px;
+	cursor: pointer;
+}
+
+.searchBlock .send > i{
+	color: #7b7a7a;
+	font-size: 15px;
+}
+
+.searchBlock .send:hover > i{
+	color: #04bc77;
+}
+
+/*Блок комментариев*/
+div.commentsBlock{
+	margin-top: 30px;
+	padding-top: 30px;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+	border-top: 1px solid #9c9c9c;
+}
+
+div.commentsBlock h2{
+	display: inline-block;
+	font: 24px/24px "raleway_semiBold";
+}
+
+div.commentsBlock > h2{
+	margin-bottom: 20px;	
+} 
+
+div.commentsBlock ul,
+div.commentsBlock ul li{
+	display: inline-block;
+	width: 100%;
+}
+
+div.commentsBlock ul li{
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+div.commentsBlock ul li .formComment{
+	margin-top: 20px;
+	display: none;
+}
+
+div.commentsBlock ul li .formComment.active{
+	display: block;
+}
+
+div.commentsBlock ul li .formComment h2{
+	display: none;
+}
+
+div.commentsBlock ul.parentListComment{
+	margin-bottom: 30px;
+}
+
+div.commentsBlock ul.listComment{
+	margin-top: 30px;
+	padding-left: 10%;
+	box-sizing: border-box;
+}
+
+div.commentsBlock ul li:last-child{
+	margin-bottom: 0px;
+}
+
+div.commentsBlock ul li .avatar{
+    margin-right: 3%;
+    width: 12%;
+	float: left;
+} 
+
+div.commentsBlock ul li .avatar img{
+	width: 100%;
+	max-width: 100%;
+}
+
+div.commentsBlock ul li .descript{
+	width: 85%;	
+	float: left;
+}
+
+div.commentsBlock ul li .descript .login{
+	margin-bottom: 10px;
+}
+
+div.commentsBlock ul li .descript .login span{
+	font: 14px/20px "raleway_semiBold";
+	text-transform: uppercase;
+	color: #222;
+}
+
+div.commentsBlock ul li .descript .dataComment > .date{
+	margin-bottom: 10px;
+}
+
+div.commentsBlock ul li .descript .dataComment > .date,
+div.commentsBlock ul li .descript .dataComment > .date > span{
+	font: 14px/20px "gotham_pro";
+	color: #222;	
+}
+
+div.commentsBlock ul li .descript .text,
+div.commentsBlock ul li .descript .text p,
+div.commentsBlock ul li .descript .text span{
+	font: 16px/20px "gotham_pro";
+	color: #222;		
+}
+
+div.commentsBlock ul li .descript .buttonComment button{
+	font: 12px/16px "raleway_medium";
+	color: #555;	
+	border: none;
+	padding: 5px 13px;
+	background: #eee;
+	cursor: pointer;
+}
+
+div.commentsBlock ul li .descript .buttonComment button:hover{
+	background: #04bc77;
+	color: #fff;
+}
+
+.formComment h2{
+	margin-bottom: 36px;
+}
+
+.formComment .message{
+	margin-bottom: 13px;
+}
+
+.formComment .label{
+	font: 14px/18px "gotham_pro";
+	color: #777;	
+	margin-bottom: 7px;	
+}
+
+.formComment .area textarea{
+    width: 99.5%;
+    height: 145px;
+	font: 17px/22px "gotham_pro";
+	color: #777;
+	padding: 10px 10px;	
+	box-sizing: border-box;
+}
+
+.formComment .info > *{
+	float: left;
+	width: 49%;
+}
+
+.formComment .info > .left{
+    margin-right: 2%;
+}
+
+.formComment .info > * input[type="text"]{
+	font: 17px/22px "gotham_pro";
+	color: #777;
+	width: 100%;
+	padding: 10px 10px;
+	box-sizing: border-box;	
+}
+
+.formComment  .sendComment{
+    font: 14px/18px "raleway_semiBold";
+    color: #fff;
+    border: none;
+    padding: 15px 43px;
+    background: #04bc77;
+    cursor: pointer;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.formComment  .sendComment:hover{
+    background: #59cfa3;	
+}
+
+
+/*Адаптация*/
+@media screen and (max-width: 850px){
+	.switch ul li{
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.layoutA,
+	.lineBlock{
+		display: none;
+	}
+
+	#container .layoutB{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.contentSwitch div[key] > ul > li{
+		width: 48%;
+		margin-right: 3%;
+	}
+
+	.contentSwitch div[key] > ul > li:nth-child(2n){
+		margin-right: 0px;
+	}
+
+	header .social{
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		float: left;
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+
+	header nav ul.fullMenu > li.toggleButton.show{
+		display: none;
+	}
+
+	header{
+		position: relative;	
+	}
+
+	header .info{
+		width: 100%;
+	}
+
+	a.logo{
+		float: right;
+		margin-left: 0;
+		margin-right: 0px;
+	}
+
+	.fullMenu .fullMenuButton{
+    	display: inline-block;
+	}
+
+	.fullMenu .fullMenuButton.active + ul.fullMenu{
+		display: block;
+	}
+
+	ul.fullMenu{
+	    display: none;
+	    background: #25aae1;
+	    position: absolute;
+	    left: 0;
+	    top: 100%;
+	    margin: 0px 0 0 0;
+	    padding: 0 0 0px 0;
+	    box-sizing: border-box;
+	    width: 100%;
+	    overflow-y: auto;
+	    z-index: 5;
+	}
+
+	div.fullMenu ul.fullMenu li.item{
+	    margin-bottom: 0;
+	    display: block;
+	    float: none;
+	}
+
+	div.fullMenu ul.fullMenu li.item a{
+		color: #fff;
+		display: inline-block;
+		width: 100%;
+	    padding: 13px 15px;
+	    box-sizing: border-box;
+	    font: 20px/24px "raleway_semiBold";
+	}
+
+	header nav ul.fullMenu > li{
+		margin-left: 0px;
+	}
+
+	div.fullMenu ul.fullMenu li.item:hover{
+		background: #04bc77;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#container .contentSwitch div[key] > ul > li{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	div.commentsBlock ul.listComment{
+		padding-left: 5%;
+	}
+
+	div.commentsBlock ul li .avatar{
+		display: none;
+	}
+
+	div.commentsBlock ul li .descript{
+		width: 100%;
+	}
+
+	.formComment .info > *{
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+
+	.formComment .info > *:last-child{
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.switch ul li,
+	.switch ul li.current{
+		width: 100%;
+		cursor: default;
+		background: rgba(0,0,0,0);
+	}
+
+	.switch ul li:not(.current):hover > span{
+		color: #343434;
+	}
+
+	.switch ul li:not(.current) > span:hover{
+		color: #04bc77;
+	}
+
+	.switch ul li.current > span{
+	    background-color: #21d368;
+	}
+
+	.switch ul li > span{
+		display: inline-block;
+	    margin-right: 16px;
+	    margin-bottom: 3px;
+	    padding: 7px 20px;
+	    -webkit-border-radius: 17px;
+	    -moz-border-radius: 17px;
+	    border-radius: 17px;
+	    box-sizing: border-box;
+	    cursor: pointer;
+	}
+
+	.contentSwitch div[key] > ul > li{
+		padding: 0px;
+		margin-bottom: 50px;
+	}
+
+	.contentSwitch div[key] > ul > li:hover{
+		box-shadow: none;
+	}
+}
