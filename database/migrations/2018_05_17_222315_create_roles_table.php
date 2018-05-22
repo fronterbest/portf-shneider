@@ -30,7 +30,7 @@ class CreateRolesTable extends Migration
 
         DB::table('roles')->insert(array('role' => 'admin', 'created_at' => $date_today." ".$time_today, 'updated_at' => $date_today." ".$time_today));
         DB::table('roles')->insert(array('role' => 'manager', 'created_at' => $date_today." ".$time_today, 'updated_at' => $date_today." ".$time_today));
-
+        DB::table('roles')->insert(array('role' => 'user', 'created_at' => $date_today." ".$time_today, 'updated_at' => $date_today." ".$time_today));
     }
 
     /**

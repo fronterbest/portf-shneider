@@ -30,3 +30,8 @@ Route::get('/blog', function () {
 Route::get('/blog/article', function () {
     return view('article');
 })->name('article');
+
+/*Регистрация нового пользователя*/
+//Route::get('users/register', 'UsersController@getRegister');
+Route::get('users/register', 'Users\UsersController@getRegister');
+//Route::post('users/register', 'Users\UsersController@postRegister');

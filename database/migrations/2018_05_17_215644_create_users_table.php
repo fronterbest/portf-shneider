@@ -11,6 +11,7 @@ function boot(){
 
 //php artisan make:migration create_users_table - Создание миграции
 //php artisan migrate - запуск миграции
+//php artisan make:controller UsersController - Создание контроллера
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
