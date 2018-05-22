@@ -23,6 +23,14 @@ class CreateRolesTable extends Migration
             //Времена создания и обновления записи в базе
             $table->timestamps();
         });
+
+        // Добавляем сразу в базу роли
+        $date_today = date("y.m.d"); 
+        $time_today = date("H:i:s"); 
+
+        DB::table('roles')->insert(array('role' => 'admin', 'created_at' => $date_today." ".$time_today, 'updated_at' => $date_today." ".$time_today));
+        DB::table('roles')->insert(array('role' => 'manager', 'created_at' => $date_today." ".$time_today, 'updated_at' => $date_today." ".$time_today));
+
     }
 
     /**

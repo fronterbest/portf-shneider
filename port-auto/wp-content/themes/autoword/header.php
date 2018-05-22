@@ -61,8 +61,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="col col-xs-12 col-sm-4 col-lg-5 header_part1_email">
-								<div id="comp_f89908df0aa4ad23660be3f67f050df4">		<a href="tel:avtomir@gmail.com">
-									<i class="fa fa-envelope" aria-hidden="true"></i>&#160;&#160;avtomir@gmail.com		</a>
+							<?$post = get_post( 105, ARRAY_A);?>
+								<div id="comp_f89908df0aa4ad23660be3f67f050df4">		<a href="email:<?=get_post_meta($post["ID"],"email", true)?>">
+									<i class="fa fa-envelope" aria-hidden="true"></i>&#160;&#160;<?=get_post_meta($post["ID"],"email", true)?>		</a>
 								</div>							
 							</div>
 							<div class="col col-xs-12 col-sm-2   col-lg-2 hidden-xs header_part1_search">
